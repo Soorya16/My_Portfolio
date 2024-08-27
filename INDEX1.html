@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Positioning</title>
+    <script>
+        // to move the element
+        function moveit(move, newTop, newLeft)
+        {
+            const dom = document.getElementById(move).style;
+            dom.top = newTop + "px";
+            dom.left = newLeft + "px";
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>
+                <b>X coordinate: </b>
+                <input type="text" id="leftCoord" size="3" />
+            </label>
+            <br/>
+            <label>
+                <b>Y Coordinate: </b>
+                <input type="text" id="topCoord" size="3"/>
+            </label>
+            <br/>
+            <input type="button" value="move it" onclick="moveit('frog', document.getElementById('topCoord').value, document.getElementById('leftCoord').value)"/>
+        </p>
+    </form> 
+    <div id="frog" style="position: absolute;top:115px;left:0;">
+        <img src="https://th.bing.com/th/id/OIP.ldE7Lk67kS0Rju6pCMUrbgHaHa?rs=1&pid=ImgDetMain" width="150" height="150" alt="Jumping Frog">
+    </div>
+</body>
+</html>
