@@ -114,6 +114,27 @@
     .demo-btn:hover {
       background-color: #218838;
     }
+
+ 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .about-photo {
+    max-width: 80%;
+    height: auto; /* Automatically adjusts height */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo {
+    max-width: 100%;
+    height: 300px; /* Reduces height on small devices */
+    object-fit: cover;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -138,7 +159,7 @@
   <!-- Hero Section -->
 <section id="hero" class="hero">
   <div class="container hero-container">
-    <img src="./IMG_3263.JPG" alt="Soorya D." class="profile-pic">
+    <img src="./img/IMG_2124.JPG" alt="Soorya D." class="profile-pic">
     <div class="hero-content">
       <h1>Hello, I'm</h1>
       <h1>Soorya D </h1>
@@ -213,7 +234,7 @@
             <p>Java - Intermediate</p>
           </div>
           <div class="skill-item">
-            <i class="fas fa-database"></i> <!-- This can also represent data structures -->
+            <i class="fas fa-database"></i> 
             <p>Data Structures - Intermediate</p>
           </div>
         </div>
@@ -261,11 +282,11 @@
             <p>PL/SQL - Beginner</p>
           </div>
           <div class="skill-item">
-            <i class="fas fa-database"></i> <!-- Placeholder icon, replace with actual database technology icon -->
+            <i class="fas fa-database"></i> 
             <p>MongoDB - Intermediate</p>
           </div>
           <div class="skill-item">
-            <i class="fas fa-database"></i> <!-- Placeholder icon, replace with actual database technology icon -->
+            <i class="fas fa-database"></i>
             <p>Firebase - Beginner</p>
           </div>
         </div>
